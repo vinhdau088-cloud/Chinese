@@ -43,12 +43,11 @@ const all=[
 
 
 return all.filter(
-item=>
-item.word.includes(keyword)
-||
-item.pinyin.includes(keyword)
-||
-item.meaning.includes(keyword)
+ item =>
+ item.word?.includes(keyword) ||
+ item.hanzi?.includes(keyword) ||
+ item.pinyin?.includes(keyword) ||
+ item.meaning?.includes(keyword)
 );
 
 }
