@@ -1,53 +1,87 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Link from "next/link";
-import { User, Moon } from "lucide-react";
 
 export default function Navbar(){
 
 return (
 
-<nav className="
+<motion.nav
+initial={{y:-30,opacity:0}}
+animate={{y:0,opacity:1}}
+className="
 w-full
 bg-white
-shadow-sm
-rounded-2xl
-p-4
+rounded-3xl
+shadow-lg
+p-5
 flex
-justify-between
 items-center
-">
+justify-between
+mb-8
+"
+>
+
 
 <h1 className="
 text-2xl
 font-bold
 text-purple-600
 ">
+
 🇨🇳 ChineseMaster
+
 </h1>
 
 
 <div className="
-flex
-gap-5
-items-center
+hidden
+md:flex
+gap-6
+font-medium
 ">
 
 
-<Link href="/profile">
-<User/>
+<Link href="/">
+Trang chủ
 </Link>
 
 
-<button>
-<Moon/>
-</button>
+<Link href="/hsk/hsk1">
+HSK
+</Link>
+
+
+<Link href="/tocfl/a1">
+TOCFL
+</Link>
+
+
+<Link href="/search">
+Tra từ
+</Link>
 
 
 </div>
 
 
-</nav>
+<button
+className="
+bg-purple-600
+text-white
+px-5
+py-2
+rounded-full
+"
+>
+
+Đăng nhập
+
+</button>
+
+
+</motion.nav>
 
 );
 
