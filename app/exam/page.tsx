@@ -3,6 +3,7 @@
 
 import {useState} from "react";
 import {getExam} from "@/lib/exam";
+import Timer from "@/components/exam/Timer";
 
 
 export default function ExamPage(){
