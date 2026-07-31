@@ -8,7 +8,21 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Ranking {
 
+ id String @id @default(cuid())
+
+ userId String
+
+ username String
+
+ xp Int @default(0)
+
+ level String
+
+ createdAt DateTime @default(now())
+
+}
 
 model User {
 
