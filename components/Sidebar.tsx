@@ -9,6 +9,7 @@ const menu=[
 ["🎓","TOCFL","/tocfl"],
 ["🃏","Flashcard","/flashcard"],
 ["🎤","Shadowing","/shadowing"],
+  ["📊","Dashboard","/dashboard"],
 ["📝","Thi thử","/exam"],
 ["👥","Cộng đồng","/community"]
 
