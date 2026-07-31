@@ -1,0 +1,27 @@
+[
+  {
+    "id":1,
+    "type":"choice",
+    "question":"你好 có nghĩa là gì?",
+    "options":[
+      "Xin chào",
+      "Cảm ơn",
+      "Tạm biệt",
+      "Xin lỗi"
+    ],
+    "answer":"Xin chào"
+  },
+
+  {
+    "id":2,
+    "type":"choice",
+    "question":"学习 nghĩa là gì?",
+    "options":[
+      "Ăn",
+      "Học tập",
+      "Ngủ",
+      "Đi"
+    ],
+    "answer":"Học tập"
+  }
+]
