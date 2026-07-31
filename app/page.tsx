@@ -57,7 +57,7 @@ export default function Home() {
           Flashcard hôm nay
         </h2>
 
-        <Flashcard />
+        <AdvancedFlashcard />
 
       </section>
 
