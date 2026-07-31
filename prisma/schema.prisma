@@ -50,6 +50,25 @@ model User {
 }
 
 
+model UserStats {
+
+ id String @id @default(cuid())
+
+ userId String @unique
+
+ xp Int @default(0)
+
+ streak Int @default(0)
+
+ lastStudy DateTime?
+
+ level String @default("Beginner")
+
+ badges String[]
+
+ createdAt DateTime @default(now())
+
+}
 
 model Vocabulary {
 
