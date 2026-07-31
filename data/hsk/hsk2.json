@@ -1,0 +1,13 @@
+[
+  {
+    "id":1,
+    "word":"朋友",
+    "pinyin":"péngyou",
+    "zhuyin":"ㄆㄥˊ ㄧㄡˇ",
+    "meaning":"Bạn bè",
+    "level":"HSK2",
+    "example":"他是我的朋友。",
+    "translation":"Anh ấy là bạn của tôi.",
+    "audio":"/audio/hsk2/pengyou.mp3"
+  }
+]
