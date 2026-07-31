@@ -1,24 +1,35 @@
-import AdvancedFlashcard from "@/components/AdvancedFlashcard";
-
-export default function Home() {
+export default function Home(){
 
   return (
-    <main className="min-h-screen bg-gray-50 p-6">
+    <main className="
+      min-h-screen
+      p-10
+      bg-gray-50
+    ">
 
-      <h1 className="text-4xl font-bold mb-3">
+      <h1 className="
+        text-5xl
+        font-bold
+        text-purple-600
+      ">
         🇨🇳 ChineseMaster
       </h1>
 
-      <p className="text-gray-600 mb-8">
+      <p className="mt-4 text-xl">
         Học tiếng Trung HSK - TOCFL bằng AI
       </p>
 
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="
+        mt-10
+        grid
+        md:grid-cols-3
+        gap-6
+      ">
 
-        <div className="bg-white rounded-2xl p-6 shadow">
+        <div className="bg-white p-6 rounded-3xl shadow">
           📚
-          <h2 className="text-xl font-bold">
+          <h2 className="text-2xl font-bold">
             HSK 1 - 6
           </h2>
           <p>
@@ -27,9 +38,9 @@ export default function Home() {
         </div>
 
 
-        <div className="bg-white rounded-2xl p-6 shadow">
+        <div className="bg-white p-6 rounded-3xl shadow">
           🎓
-          <h2 className="text-xl font-bold">
+          <h2 className="text-2xl font-bold">
             TOCFL A1 - C2
           </h2>
           <p>
@@ -38,10 +49,10 @@ export default function Home() {
         </div>
 
 
-        <div className="bg-white rounded-2xl p-6 shadow">
-          🎤
-          <h2 className="text-xl font-bold">
-            Shadowing
+        <div className="bg-white p-6 rounded-3xl shadow">
+          🤖
+          <h2 className="text-2xl font-bold">
+            AI Chinese
           </h2>
           <p>
             Luyện nghe nói
@@ -49,18 +60,6 @@ export default function Home() {
         </div>
 
       </div>
-
-
-      <section className="mt-10">
-
-        <h2 className="text-2xl font-bold mb-4">
-          Flashcard hôm nay
-        </h2>
-
-        <AdvancedFlashcard />
-
-      </section>
-
 
     </main>
   );
