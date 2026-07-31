@@ -1,11 +1,9 @@
 export default function Profile(){
 
 
-return (
+return(
 
-<div className="
-p-8
-">
+<main className="p-8">
 
 
 <div className="
@@ -21,55 +19,30 @@ max-w-xl
 text-3xl
 font-bold
 ">
-👤 Người học
+
+👤 Hồ sơ
+
 </h1>
 
 
 <p className="mt-5">
-Level: 1
-</p>
 
-
-<p>
 XP: 0
+
 </p>
 
 
 <p>
-🔥 Streak: 0 ngày
+
+Level: Beginner
+
 </p>
 
 
-<div className="
-mt-5
-">
-
-HSK Progress
-
-<div className="
-bg-gray-200
-rounded-full
-h-3
-">
-
-<div
-className="
-bg-purple-600
-h-3
-rounded-full
-w-1/5
-"
-/>
-
-</div>
-
 </div>
 
 
-</div>
-
-
-</div>
+</main>
 
 )
 
