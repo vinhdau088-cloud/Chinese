@@ -1,0 +1,241 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+
+model User {
+
+  id String @id @default(cuid())
+
+  name String
+
+  email String @unique
+
+  password String
+
+
+  avatar String?
+
+
+  xp Int @default(0)
+
+  level Int @default(1)
+
+  streak Int @default(0)
+
+
+
+  posts Post[]
+
+  comments Comment[]
+
+  likes Like[]
+
+
+  flashcards Flashcard[]
+
+
+  scores ExamScore[]
+
+
+  createdAt DateTime @default(now())
+
+}
+
+
+
+model Vocabulary {
+
+
+  id String @id @default(cuid())
+
+
+  word String
+
+  pinyin String?
+
+  zhuyin String?
+
+
+  meaning String
+
+
+  example String?
+
+
+  translation String?
+
+
+  audio String?
+
+
+  level String
+
+
+  type String
+
+
+  flashcards Flashcard[]
+
+
+}
+
+
+
+model Flashcard {
+
+
+id String @id @default(cuid())
+
+
+userId String
+
+user User @relation(
+fields:[userId],
+references:[id]
+)
+
+
+vocabularyId String
+
+vocabulary Vocabulary @relation(
+fields:[vocabularyId],
+references:[id]
+)
+
+
+
+remember Boolean @default(false)
+
+
+createdAt DateTime @default(now())
+
+
+}
+
+
+
+model Post {
+
+
+id String @id @default(cuid())
+
+
+content String
+
+
+userId String
+
+
+user User @relation(
+fields:[userId],
+references:[id]
+)
+
+
+comments Comment[]
+
+
+likes Like[]
+
+
+createdAt DateTime @default(now())
+
+
+}
+
+
+
+model Comment {
+
+
+id String @id @default(cuid())
+
+
+content String
+
+
+userId String
+
+user User @relation(
+fields:[userId],
+references:[id]
+)
+
+
+
+postId String
+
+post Post @relation(
+fields:[postId],
+references:[id]
+)
+
+
+
+createdAt DateTime @default(now())
+
+
+}
+
+
+
+model Like {
+
+
+id String @id @default(cuid())
+
+
+userId String
+
+user User @relation(
+fields:[userId],
+references:[id]
+)
+
+
+
+postId String
+
+post Post @relation(
+fields:[postId],
+references:[id]
+)
+
+
+}
+
+
+
+model ExamScore {
+
+
+id String @id @default(cuid())
+
+
+userId String
+
+
+user User @relation(
+fields:[userId],
+references:[id]
+)
+
+
+exam String
+
+
+score Int
+
+
+createdAt DateTime @default(now())
+
+
+}
