@@ -1,0 +1,14 @@
+[
+  {
+    "id":1,
+    "word":"學習",
+    "traditional":"學習",
+    "pinyin":"xuéxí",
+    "zhuyin":"ㄒㄩㄝˊ ㄒㄧˊ",
+    "meaning":"Học tập",
+    "level":"TOCFL A2",
+    "example":"我喜歡學習中文。",
+    "translation":"Tôi thích học tiếng Trung.",
+    "audio":"/audio/tocfl/a2/xuexi.mp3"
+  }
+]
