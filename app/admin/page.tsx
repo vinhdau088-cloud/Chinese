@@ -1,6 +1,7 @@
 export default function AdminPage(){
 
-
+import UserTable 
+from "@/components/admin/UserTable";
 return(
 
 <main className="
@@ -18,7 +19,7 @@ mb-8
 
 </h1>
 
-
+<UserTable/>
 
 <div className="
 grid
