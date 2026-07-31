@@ -15,11 +15,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body>
-        <AuthProvider>
-
 {children}
-
-</AuthProvider>
       </body>
     </html>
   );
