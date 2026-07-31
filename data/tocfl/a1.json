@@ -1,0 +1,25 @@
+[
+  {
+    "id":1,
+    "word":"謝謝",
+    "pinyin":"xièxiè",
+    "zhuyin":"ㄒㄧㄝˋ ㄒㄧㄝˋ",
+    "meaning":"Cảm ơn",
+    "level":"TOCFL A1",
+    "example":"謝謝你的幫助。",
+    "translation":"Cảm ơn sự giúp đỡ của bạn.",
+    "audio":"/audio/tocfl/a1/xiexie.mp3"
+  },
+
+  {
+    "id":2,
+    "word":"朋友",
+    "pinyin":"péngyǒu",
+    "zhuyin":"ㄆㄥˊ ㄧㄡˇ",
+    "meaning":"Bạn bè",
+    "level":"TOCFL A1",
+    "example":"他是我的朋友。",
+    "translation":"Anh ấy là bạn của tôi.",
+    "audio":"/audio/tocfl/a1/pengyou.mp3"
+  }
+]
