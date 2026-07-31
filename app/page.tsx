@@ -1,4 +1,4 @@
-import Flashcard from "@/components/Flashcard";
+import AdvancedFlashcard from "@/components/AdvancedFlashcard";
 
 export default function Home() {
 
