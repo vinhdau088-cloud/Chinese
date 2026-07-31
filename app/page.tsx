@@ -1,5 +1,7 @@
 export default function Home(){
-
+import DailyChallenge from "@/components/DailyChallenge";
+import LearningPath from "@/components/LearningPath";
+import AITrainer from "@/components/AITrainer";
   return (
     <main className="
       min-h-screen
