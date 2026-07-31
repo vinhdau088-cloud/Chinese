@@ -197,38 +197,27 @@ setRemember(false)
 
 
 <button
-onClick={(e)=>{
-e.stopPropagation();
-setRemember(true)
-}}
+  onClick={(e)=>{
+    e.stopPropagation();
+    setRemember(true)
+  }}
 >
 
 <Heart
-className={
-remember?
-"text-red-500":
-""
-}
-
+  className={remember ? "text-red-500" : ""}
 />
 
 </button>
 
+</div>
 
 </div>
 
+</div>
 
 </div>
 
-
 </div>
 
-
-</div>
-
-
-</div>
-
-)
-
-  }
+);
+}
