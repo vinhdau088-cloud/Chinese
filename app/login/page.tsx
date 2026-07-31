@@ -1,25 +1,21 @@
 "use client";
 
-import { useState } from "react";
+
+import {useState} from "react";
+
 
 export default function Login(){
 
+
 const [email,setEmail]=useState("");
+
 const [password,setPassword]=useState("");
 
 
-function handleLogin(){
 
-alert(
-"Đăng nhập: "+email
-);
+return(
 
-}
-
-
-return (
-
-<div className="
+<main className="
 min-h-screen
 flex
 items-center
@@ -32,7 +28,7 @@ bg-gray-50
 bg-white
 p-8
 rounded-3xl
-shadow-xl
+shadow
 w-full
 max-w-md
 ">
@@ -41,57 +37,55 @@ max-w-md
 <h1 className="
 text-3xl
 font-bold
-text-center
 mb-6
 ">
-Đăng nhập 🇨🇳
+
+🔐 Đăng nhập
+
 </h1>
 
 
 <input
-className="
-w-full
-border
-p-3
-rounded-xl
-mb-4
-"
+
+className="border p-3 rounded-xl w-full mb-3"
+
 placeholder="Email"
-value={email}
+
 onChange={
 e=>setEmail(e.target.value)
 }
+
 />
 
 
 <input
-className="
-w-full
-border
-p-3
-rounded-xl
-mb-4
-"
-placeholder="Mật khẩu"
+
+className="border p-3 rounded-xl w-full mb-5"
+
+placeholder="Password"
+
 type="password"
-value={password}
+
 onChange={
 e=>setPassword(e.target.value)
 }
+
 />
 
 
 <button
-onClick={handleLogin}
+
 className="
-w-full
 bg-purple-600
 text-white
 p-3
 rounded-xl
-">
+w-full
+"
 
-Đăng nhập
+>
+
+Login
 
 </button>
 
@@ -99,7 +93,7 @@ rounded-xl
 </div>
 
 
-</div>
+</main>
 
 )
 
