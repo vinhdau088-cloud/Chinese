@@ -2,7 +2,7 @@
 
 import AudioControl from "./AudioControl";
 import SpeedControl from "./SpeedControl";
-
+import Recorder from "./Recorder";
 
 export default function ShadowingCard(){
 
@@ -72,6 +72,9 @@ change={speed}
 
 />
 
+  <SpeedControl
+change={speed}
+/>
 
 </div>
 
