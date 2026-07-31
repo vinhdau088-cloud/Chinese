@@ -1,26 +1,28 @@
-import {getTOCFLWords} from "@/lib/tocfl";
+import { getTOCFLWords } from "@/lib/tocfl";
 
 
 export default async function LevelPage({
 
-params
+  params
 
 }:{
 
-params:{
-level:string
-}
+  params: Promise<{
+    level:string
+  }>
 
 }){
 
 
-const level=params.level.toUpperCase();
+const { level } = await params;
+
+const levelName = level.toUpperCase();
 
 
-const words=getTOCFLWords(level);
+const words = getTOCFLWords(levelName);
 
 
-return(
+return (
 
 <main className="
 p-8
@@ -35,7 +37,7 @@ font-bold
 mb-8
 ">
 
-TOCFL {level}
+TOCFL {levelName}
 
 </h1>
 
@@ -55,7 +57,7 @@ words.map(
 
 <div
 
-key={word.id}
+key={word.id || word.word}
 
 className="
 bg-white
@@ -73,7 +75,7 @@ font-bold
 text-purple-600
 ">
 
-{word.traditional}
+{word.traditional || word.word}
 
 </h2>
 
@@ -97,6 +99,7 @@ text-purple-600
 
 
 ))
+
 }
 
 
