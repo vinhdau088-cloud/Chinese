@@ -64,7 +64,20 @@ Vocabulary
 
 </div>
 
+<a
+href="/admin/vocabulary"
+className="
+bg-white
+rounded-3xl
+shadow
+p-6
+block
+"
+>
 
+📚 Manage Vocabulary
+
+</a>
 
 <div className="
 bg-white
